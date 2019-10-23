@@ -16,7 +16,6 @@
         padding: 10px;
         margin: 0 auto;
         width: 40%;
-        align-items: center;
         margin-bottom: 10px;
 
         a {
@@ -24,7 +23,7 @@
             color: #fff;
             text-decoration: none;
             font-family: 'Roboto', sans-serif;
-            align-items: center;
+           
 
         }
     
@@ -33,11 +32,23 @@
             border-radius: 4px;
         
         }
+
+        @media @tablet {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+
+            a {
+                padding: 10px;
+            }
+    
+        }
     }
 
     .social {
         display: flex;
-        align-content: center;
+        justify-content: space-evenly;
         margin: 0 auto;
         color: @white;
     
@@ -46,6 +57,16 @@
             color: @white;
             text-decoration: none;
         }
+
+        @media @tablet {
+            display: flex;
+            justify-content: center;
+
+            div {
+                padding: 10px;
+            }
+        }
     }
+
 
 }

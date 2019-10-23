@@ -1,8 +1,7 @@
 // Main body styling
 
 .page-container {
-    
-    
+        
 
     .card-wrap {
         width: 100%;
@@ -14,16 +13,13 @@
             width: 33.5%;
             background-color: @white;
             border: 1px solid white;
-            margin: 10px;
+            margin: 5px;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            border-radius: 30px;
+            box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
             transition: 0.3s;
 
-            &:hover {
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-            }
-
+            
             .img-team1 {
                 background-image: url(/img/team_collaboration.svg);
                 background-size: cover;
@@ -49,12 +45,62 @@
                 align-items: center;
                 
             }
+  
+        }
 
-            
-            
+        @media @mid-desk {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 80px;                                             
+            .card-container1 {
+                width: 100%;
+
+                .img-team1 {
+                    margin: 0 auto;
+                 }
+ 
+                 .img-team2 {
+                    margin: 0 auto;
+                 
+                 }
+ 
+                 .img-team3 {
+                    margin: 0 auto;
+                 }
+            }                                                                                                                                      
+        }
+
+        @media @tablet {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 80px;
+
+            .card-container1 {
+                width: 100%;
+                margin-bottom: 10px;
+
+                .img-team1 {
+                   margin-left: 150px;
+                }
+
+                .img-team2 {
+                    align-content: center;
+                    margin-left: 150px;
+                
+                }
+
+                .img-team3 {
+                   margin-left: 150px;
+                }
+
+        
+            }
+        
+        
         }
 
     }
+
 
     .break-header {
         width: 100%;
@@ -99,29 +145,23 @@
         padding: 20px;
         margin-bottom: 100px;
 
-        .card-container:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        }
-        
+              
         .card-container2 {
-            width: 33.5%;
-            margin: 20px;
+            width: 30%;
+            margin: 0 auto;
             padding-left: auto;
             align-items: center;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            border-radius: 30px;
+            
+            box-shadow: 0 4px 6px 0 rgba(0,0,0,0.2);
             transition: 0.3s;
 
-            .card-container2:hover {
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-            }
-            
 
             .female1 {
                 background-image: url(/img/female-1.jpg);
                 background-size: cover;
                 height: 200px;
-                width: 250px;
+                width: 200px;
                 margin: 0 auto;
                 align-items: center;
                 border-radius: 50%;
@@ -131,20 +171,22 @@
                 background-image: url(/img/male-1.jpg);
                 background-size: cover;
                 height: 200px;
-                width: 250px;
+                width: 200px;
                 margin: 0 auto;
                 padding-left: 20px;
                 align-items: center;
                 border-radius: 70%;
+                margin-bottom: 30px;
             }
     
             .female2 {
                 background-image: url(/img/female-2.jpg);
                 background-size: cover;
                 height: 200px;
-                width: 250px;
+                width: 200px;
                 margin: 0 auto;
                 border-radius: 50%;
+                margin-bottom: 30px;
             }
             h2 {
                 text-align: center;
@@ -162,6 +204,44 @@
             }
 
             
+        }
+
+        @media @desktop {
+            display: flex;
+            flex-direction: column;
+            
+            .card-container2 {
+                width: 80%;
+                margin-bottom: 20px;
+            }    
+        }
+
+        @media @tablet {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+
+            .card-container2 {
+                width: 90%;
+                height: 100%;
+                border-radius: 30px;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                margin-bottom: 30px;
+
+                .female1 {
+                   display: none;
+                }
+
+                .male1 {
+                    display: none;
+                }
+
+                .female2 {
+                    display: none;
+                }
+            }
         }
 
     

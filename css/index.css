@@ -252,7 +252,6 @@ p {
 .nav-container {
   max-width: 100%;
   font-size: 20px;
-  margin-bottom: 100px;
   display: flex;
   align-content: center;
   background-color: #333;
@@ -364,6 +363,7 @@ p {
 .page-container .card-wrap {
   width: 100%;
   display: flex;
+  margin-top: 60px;
   margin-bottom: 120px;
   padding: 20px;
 }
@@ -581,4 +581,12 @@ p {
 }
 .page-container .bottom-banner .banner-container {
   padding: 30px;
+}
+.back-card {
+  background-color: lightgray;
+}
+.back-card .page-container .card-bg {
+  background-color: #FFFFFF;
+  width: 80%;
+  margin: 0 auto;
 }

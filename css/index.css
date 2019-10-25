@@ -187,7 +187,7 @@ h1 {
   font-family: 'Montserrat', cursive;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 2.6rem;
   padding-bottom: 10px;
 }
 h4 {
@@ -286,10 +286,26 @@ p {
   background-color: #0facc4;
   border-radius: 4px;
 }
+@media only screen and (max-width: 968px) {
+  .nav-container {
+    width: 100%;
+  }
+  .nav-container .head-logo {
+    width: 30%;
+  }
+  .nav-container .head-logo h2 {
+    font-size: 20px;
+  }
+  .nav-container .navbar {
+    width: 70%;
+  }
+  .nav-container .navbar a {
+    font-size: 16px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .nav-container {
     width: 100%;
-    margin-bottom: 30px;
     display: flex;
   }
   .nav-container .navbar {
@@ -300,14 +316,26 @@ p {
     padding: 20px;
   }
   .nav-container .head-logo {
-    display: none;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  .nav-container .head-logo h2 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width:500px) {
+  .nav-container {
+    width: 100%;
+  }
+  .nav-container .navbar a {
+    font-size: 14px;
+    padding: 5px;
   }
 }
 .foot-container {
   max-width: 100%;
   height: 100px;
   font-size: 16px;
-  margin-bottom: 40px;
   background-color: rgba(58, 58, 58, 0.9);
   border-bottom: 2px solid rgba(158, 158, 158, 0.7);
   -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
@@ -317,8 +345,10 @@ p {
 .foot-container .footer1 {
   padding: 10px;
   margin: 0 auto;
-  width: 40%;
+  width: 100%;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 .foot-container .footer1 a {
   padding: 10px;
@@ -329,6 +359,14 @@ p {
 .foot-container .footer1 a:hover {
   background-color: #0facc4;
   border-radius: 4px;
+}
+@media only screen and (max-width: 968px) {
+  .foot-container .footer1 {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
 }
 @media only screen and (max-width: 768px) {
   .foot-container .footer1 {
@@ -343,13 +381,23 @@ p {
 }
 .foot-container .social {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 0 auto;
   color: #FFFFFF;
 }
 .foot-container .social a {
   color: #FFFFFF;
   text-decoration: none;
+  align-content: center;
+  padding: 20px;
+}
+@media only screen and (max-width: 968px) {
+  .foot-container .social {
+    display: flex;
+  }
+  .foot-container .social div {
+    padding: 10px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .foot-container .social {
@@ -438,6 +486,22 @@ p {
     margin-left: 150px;
   }
 }
+@media only screen and (max-width:500px) {
+  .page-container .card-wrap .card-container1 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .page-container .card-wrap .card-container1 .img-team1 {
+    margin-left: 60px;
+    padding: 20px;
+  }
+  .page-container .card-wrap .card-container1 .img-team2 {
+    margin-left: 60px;
+  }
+  .page-container .card-wrap .card-container1 .img-team3 {
+    margin-left: 60px;
+  }
+}
 .page-container .break-header {
   width: 100%;
   background-color: rgba(100, 100, 100, 0.1);
@@ -464,6 +528,16 @@ p {
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 80px;
+}
+@media only screen and (max-width:500px) {
+  .page-container .break-header .b-text {
+    text-align: center;
+  }
+  .page-container .break-header .b-text p {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+  }
 }
 .page-container .card-wrap2 {
   width: 100%;
@@ -583,10 +657,131 @@ p {
   padding: 30px;
 }
 .back-card {
-  background-color: lightgray;
+  background-color: #ececec;
 }
 .back-card .page-container .card-bg {
   background-color: #FFFFFF;
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.back-card .page-container .card-bg h1 {
+  padding-top: 40px;
+  font-family: 'Montserrat', cursive;
+}
+.back-card .page-container .card-bg p {
+  padding: 10px;
+  font-family: 'Open Sans Condensed', cursive;
+}
+.back-card .page-container .card-bg h2 {
+  padding: 20px;
+  font-family: 'Montserrat', cursive;
+}
+.back-card .page-container .card-bg .card-text {
+  text-align: start;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+@media only screen and (max-width:500px) {
+  .back-card .page-container .card-bg {
+    width: 90%;
+  }
+  .back-card .page-container .card-bg h1 {
+    font-size: 35px;
+  }
+  .back-card .page-container .card-bg .card-text {
+    padding: 30px;
+    text-align: center;
+  }
+}
+.back-card .page-container .member-container {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #FFFFFF;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.back-card .page-container .member-container h2 {
+  text-align: center;
+  padding-top: 40px;
+  font-family: 'Montserrat', cursive;
+}
+.back-card .page-container .member-container h3 {
+  font-family: 'Russo One', cursive;
+  font-size: 3.2rem;
+  padding-top: 20px;
+}
+.back-card .page-container .member-container h4 {
+  font-family: 'Open Sans Condensed', cursive;
+}
+.back-card .page-container .member-container p {
+  font-family: 'Open Sans Condensed', cursive;
+}
+.back-card .page-container .member-container .circlimg {
+  height: 100px;
+  border-radius: 50%;
+}
+.back-card .page-container .member-container .memgroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+.back-card .page-container .member-container .memgroup .member1 {
+  width: 30%;
+  margin: 10px;
+}
+.back-card .page-container .member-container .memgroup .member2 {
+  width: 30%;
+  margin: 10px;
+}
+.back-card .page-container .member-container .memgroup .member3 {
+  width: 30%;
+  margin: 10px;
+}
+.back-card .page-container .member-container .memgroup .member4 {
+  width: 40%;
+  margin: 10px;
+}
+.back-card .page-container .member-container .memgroup .member5 {
+  width: 40%;
+  margin: 10px;
+}
+@media only screen and (max-width:500px) {
+  .back-card .page-container .member-container {
+    width: 90%;
+  }
+  .back-card .page-container .member-container h2 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+  .back-card .page-container .member-container h3 {
+    font-family: 'Russo One', cursive;
+    font-size: 3.2rem;
+    padding-top: 20px;
+  }
+  .back-card .page-container .member-container h4 {
+    font-family: 'Open Sans Condensed', cursive;
+    font-size: 18px;
+  }
+  .back-card .page-container .member-container p {
+    font-family: 'Open Sans Condensed', cursive;
+    font-size: 16px;
+    padding-top: 20px;
+  }
+  .back-card .page-container .member-container .circlimg {
+    height: 75px;
+  }
 }

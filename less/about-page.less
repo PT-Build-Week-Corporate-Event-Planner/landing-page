@@ -1,7 +1,7 @@
 
 // About Page Styling
 .back-card {
-    background-color: lightgray;
+    background-color: @back;
 
     .page-container {
     
@@ -9,7 +9,155 @@
             background-color: @white;
             width: 80%;
             margin: 0 auto;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+
+            h1 {
+                padding-top: 40px;
+                font-family: 'Montserrat', cursive;
+            }
+
+            p {
+                padding: 10px;
+                font-family: 'Open Sans Condensed', cursive;
+            }
+
+            h2 {
+                padding: 20px;
+                font-family: 'Montserrat', cursive;
+            }
+
+            .card-text {
+                text-align: start;
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-bottom: 30px;
+                padding-top: 10px;
+            }
+
+            @media @mobile {
+                width: 90%;
+
+                h1 {
+                    font-size: 35px;
+                }
+
+                .card-text {
+                    padding: 30px;
+                    text-align: center;
+                }
+                
+            }
         }
+
+        .member-container {
+            text-align: center; 
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 20px;
+            background-color: @white;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+
+            h2 {
+                text-align: center;
+                padding-top: 40px;
+                font-family: 'Montserrat', cursive;
+                
+            }
+
+            h3 {
+                font-family: 'Russo One', cursive;
+                font-size: 3.2rem;
+                padding-top: 20px;
+            }
+
+            h4 {
+                font-family: 'Open Sans Condensed', cursive;
+            }
+
+            p {
+                font-family: 'Open Sans Condensed', cursive;
+            }
+
+            .circlimg {
+                height: 100px;
+                border-radius: 50%;
+                
+            }
+
+            .memgroup {
+                .flex-box();
+                margin-top: 40px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 30px;
+                
+
+                .member1 {
+                    width: 30%;
+                    margin: 10px;
+                }
+
+                .member2 {
+                    width: 30%;
+                    margin: 10px;
+                }
+                .member3 {
+                    width: 30%;
+                    margin: 10px;
+                }
+                .member4 {
+                    width: 40%;
+                    margin: 10px;
+                }
+                .member5 {
+                    width: 40%;
+                    margin: 10px;
+                }
+                
+            }
+
+            @media @mobile {
+                width: 90%;
+
+                h2 {
+                    text-align: center;
+                    padding-top: 30px;
+                    padding-bottom: 20px;
+                    font-size: 20px;
+                    
+                    
+                }
+    
+                h3 {
+                    font-family: 'Russo One', cursive;
+                    font-size: 3.2rem;
+                    padding-top: 20px;
+                }
+    
+                h4 {
+                    font-family: 'Open Sans Condensed', cursive;
+                    font-size: 18px;
+                }
+    
+                p {
+                    font-family: 'Open Sans Condensed', cursive;
+                    font-size: 16px;
+                    padding-top: 20px;
+                }
+    
+
+                .circlimg {
+                    height: 75px;
+                }
+            }
+                
+            
+        }
+
     }
     
 }

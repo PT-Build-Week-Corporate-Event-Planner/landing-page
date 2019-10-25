@@ -105,13 +105,29 @@
         
     }
 
-    @media @tablet {
+    @media @mid-desk {
+        width: 100%;
+
+        .head-logo {
+            width: 30%;
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        .navbar {
+            width: 70%;
+            
+            a{
+                font-size: 16px;
+            }
+        }
         
     }
 
     @media @tablet {
         width: 100%;
-        margin-bottom: 30px;
         display: flex;
 
         .navbar {
@@ -125,10 +141,26 @@
         }
 
         .head-logo {
-            display: none;
+           margin: 0 auto;
+           padding-top: 30px;
+            h2 {
+                font-size: 16px;
+            }
         }
 
 
+    }
+
+    @media @mobile {
+        width: 100%;
+
+        .navbar {
+            
+            a {
+                font-size: 14px;
+                padding: 5px;
+            }
+        }
     }
 
     

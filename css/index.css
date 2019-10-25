@@ -201,7 +201,6 @@ p {
 }
 .page-container {
   max-width: 100%;
-  margin: 0 auto;
 }
 .banner {
   height: 40vh;
@@ -274,7 +273,7 @@ p {
   width: 60%;
   margin-top: 20px;
   padding-top: 10px;
-  padding-left: 40px;
+  padding-left: 20px;
 }
 .nav-container .navbar a {
   padding: 15px;
@@ -329,7 +328,15 @@ p {
   }
   .nav-container .navbar a {
     font-size: 12px;
-    padding: 3px;
+    padding: 2px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .nav-container {
+    width: 100%;
+  }
+  .nav-container .navbar a {
+    font-size: 12px;
   }
 }
 .foot-container {
@@ -378,6 +385,14 @@ p {
     padding: 10px;
   }
 }
+@media only screen and (max-width: 375px) {
+  .foot-container .footer1 {
+    width: 100%;
+  }
+  .foot-container .footer1 a {
+    font-size: 14px;
+  }
+}
 .foot-container .social {
   display: flex;
   justify-content: center;
@@ -412,7 +427,7 @@ p {
   display: flex;
   margin-top: 40px;
   margin-bottom: 120px;
-  padding: 20px;
+  padding: 30px;
 }
 .page-container .card-wrap .card-container1 {
   width: 33.5%;
@@ -749,7 +764,7 @@ p {
 .back-card .page-container .member-container .memgroup {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
@@ -768,11 +783,11 @@ p {
   margin: 10px;
 }
 .back-card .page-container .member-container .memgroup .member4 {
-  width: 40%;
+  width: 30%;
   margin: 10px;
 }
 .back-card .page-container .member-container .memgroup .member5 {
-  width: 40%;
+  width: 30%;
   margin: 10px;
 }
 @media only screen and (max-width: 500px) {
